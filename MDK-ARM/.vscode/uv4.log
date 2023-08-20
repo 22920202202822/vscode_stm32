@@ -1,0 +1,15 @@
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'STM32F405'
+compiling Data_container.c...
+..\Core\user_Src\Data_container.c(75): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				m_imu.acc[0] = (float)((int16_t)(m_frame[5] << 8) | m_frame[4]) / 32768 * 4 * 9.8;
+..\Core\user_Src\Data_container.c(76): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				m_imu.acc[1] = (float)((int16_t)(m_frame[7] << 8) | m_frame[6]) / 32768 * 4 * 9.8;
+..\Core\user_Src\Data_container.c(77): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				m_imu.acc[2] = (float)((int16_t)(m_frame[9] << 8) | m_frame[8]) / 32768 * 4 * 9.8;
+..\Core\user_Src\Data_container.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=25720 RO-data=2004 RW-data=160 ZI-data=21872  
+FromELF: creating hex file...
+"STM32F405\STM32F405.axf" - 0 Error(s), 3 Warning(s).
+Build Time Elapsed:  00:00:02
